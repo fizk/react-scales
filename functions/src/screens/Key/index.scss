@@ -1,0 +1,49 @@
+@import "../../vars.scss";
+
+.key__table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.key__table-head {
+    .key__table-column {
+        font-size: $text-size-lg;
+    }
+}
+
+.key__table-foot {
+    .key__table-column {
+        font-size: $text-size-sm;
+    }
+}
+
+.key__table-column {
+    text-align: center;
+    padding: $gutter-size-md;
+    border: 1px solid $color-white;
+    background-color: $color-primary-light;
+}
+
+.key__table-column--min {
+    background-color: $color-primary-normal;
+}
+.key__table-column--maj {
+    background-color: $color-secondary-normal;
+}
+.key__table-column--dim {
+    background-color: $color-thirdly-normal;
+}
+
+
+// - - - -
+.scales-notes {
+    display: block;
+    padding: 16px 0;
+}
+
+.scales-notes__note + .scales-notes__note{
+    padding-left: 16px;
+}
+.scales-notes__note {
+    display: inline-block;
+}
